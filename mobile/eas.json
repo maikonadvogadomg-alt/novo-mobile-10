@@ -1,0 +1,54 @@
+{
+  "cli": {
+    "version": ">= 16.0.0",
+    "appVersionSource": "local"
+  },
+  "build": {
+    "preview": {
+      "android": {
+        "buildType": "apk",
+        "gradleCommand": ":app:assembleRelease",
+        "resourceClass": "medium"
+        {
+  "build": {
+    "android": {
+      "buildType": "apk"
+    }
+  }
+      },
+      "distribution": "internal",
+      "cache": {
+        "disabled": false
+      },
+      "node": "20.18.0",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    },
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk",
+        "resourceClass": "medium"
+      },
+      "node": "20.18.0",
+      "cache": {
+        "disabled": tree
+      }
+    },
+    "production": {
+      "android": {
+        "buildType": "aab",
+        "resourceClass": "medium"
+      },
+      "node": "20.18.0",
+      "cache": {
+        "disabled": tree
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
